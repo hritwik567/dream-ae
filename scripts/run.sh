@@ -131,11 +131,14 @@ do
     done
 done
 
-cat $cmd_tmpfile 
 
-set -x
 if [ $parallel -eq 1 ]; then
-    nohup parallel --sshloginfile .. --sshdelay 0.1 --workdir $PWD -a $cmd_tmpfile bash -c &
+  cat $cmd_tmpfile 
+  nohup parallel --sshloginfile .. --sshdelay 0.1 --workdir $PWD -a $cmd_tmpfile bash -c &
+  cd -
+else
+  cd -
+  echo "Waiting for all jobs to finish"
+  wait
 fi
 
-cd -

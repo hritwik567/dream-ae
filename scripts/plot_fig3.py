@@ -29,7 +29,7 @@ ymax = 85
 
 # Plot bar graph
 bar_width = 0.2
-index = range(len(para))
+index = range(len(data))
 colors = ['#5C4033', '#FBC740', '#0E86D4', '#FF7F0E', '#2CA02C']
 
 axs[0].bar([i + 0*bar_width for i in index], slowdown(data['mop4_para_drfmb_eager']), bar_width, label='NRR (Theory)', edgecolor='black', color=colors[0], zorder=2)
