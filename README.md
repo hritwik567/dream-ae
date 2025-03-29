@@ -21,7 +21,8 @@ make -j
 - Download traces from Google Drive, [link](https://drive.google.com/file/d/1QP80z2VjxC0ph26wYVko_q9REGv2Znql/view?usp=sharing). You can also use the `gdown` utility to directly download it from the terminal.
 ```
 pip3 install gdown
-
+gdown 1QP80z2VjxC0ph26wYVko_q9REGv2Znql
+tar -xvf traces.tar.gz
 ``` 
 
 
