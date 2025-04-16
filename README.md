@@ -53,9 +53,9 @@ tar -xvf traces.tar.gz
 
 - Plot the figures using the following commands
 ```
-python3 scripts/gen_fig3.py # Output: fig3.pdf
-python3 scripts/gen_fig6.py # Output: fig6.pdf
-python3 scripts/gen_fig8.py # Output: fig8.pdf
-python3 scripts/gen_fig15.py # Output: fig15.pdf
-python3 scripts/gen_fig17.py # Output: fig17.pdf
+python3 scripts/plot_fig3.py # Output: fig3.pdf
+python3 scripts/plot_fig6.py # Output: fig6.pdf
+python3 scripts/plot_fig8.py # Output: fig8.pdf
+python3 scripts/plot_fig15.py # Output: fig15.pdf
+python3 scripts/plot_fig17.py # Output: fig17.pdf
 ```
